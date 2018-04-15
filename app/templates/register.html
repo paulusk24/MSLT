@@ -1,0 +1,92 @@
+{% extends "layout.html" %}
+
+{% block title %}Register Page{% endblock %}
+{% block content %}
+  <body style="background-color:rgb(255, 255, 255);">
+    <header>
+            <div class ="container" style="margin-bottom:30px;">
+              <div class ="row">
+                  <div class=col-12>
+                    <nav class="navbar navbar-inverse navbar-light text" style="background-color : #944660;" >
+                      <a class="navbar-brand " href="#">
+                      <img src="static/images/MSLT.jpg" width="150" height="150" class="d-inline-block align-top " alt="">
+                     <h2>Medical Sign Language Translator - version 1</h2>
+                      </a>
+                      <a  class="nav-item nav-link text" href="login"><button>SignIn</button></a>
+                    </nav> 
+                  </div>      
+              </div>  
+            </div>  
+          </header>       
+            <div class ="container">
+                <div class ="row">
+                    <div class=col-12>
+                      <div class="jumbotron" style="background-color:rgb(166, 232, 244);">
+                          <h1 class="display-5 align">Welcome To The Medical Sign Language Translator</h1>
+                          <hr class="my-4">
+                          <p class="align"> Please Register below to join!</p>
+                          <hr class="my-4">
+
+                          <div class="container center">
+                          <div class=col-10 >
+                          
+                            <!-- User name input-->
+                    <div class="form-group">
+                            <label class="control-label" for="username">Username</label>
+                            <div class="col">
+                                <input type="text" class="form-control" id="username" required>
+                            </div><!--column-->
+                        </div><!--form group-->
+    
+                        <!-- Email input-->
+                        <div class="form-group">
+                            <label class="control-label align-content-around" for="email">Email</label>
+                            <div class="col">
+                                <input type="email" class="form-control" id="email" required>
+                            </div><!--column-->
+                        </div><!--form group-->
+    
+                        <!-- Password input-->
+                        <div class="form-group">
+                            <label class="control-label align-content-around" for="password">Password</label>
+                            <div class="col">
+                                <input type="password" class="form-control" id="password" required>
+                            </div><!--column-->
+                        </div><!--form group-->
+    
+                        <!-- Sign Up button-->
+                        <div class="form-group text-center">
+                            <button class="btn btn-info btn-block" type="submit">Sign me Up!</button>
+    
+                            <p class="align-content-center">Already have an account? 
+                                <a href="login"> Log In </a>
+                            </p>
+                        </div><!--form group-->
+                                </div>
+                              </div>
+                            </form>
+                            </div>
+                          </div>
+                        </div>
+     
+                </div>
+              </div>
+            </div>
+          
+            {% endblock %}
+   
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+   

@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+{% block content %}
+<body style="background-color:rgb(255, 255, 255);">
+    <header>
+            <div class ="container" style="margin-bottom:30px;">
+              <div class ="row">
+                  <div class=col-12>
+                    <nav class="navbar navbar-inverse navbar-light text" style="background-color : #944660;" >
+                      <a class="navbar-brand " href="#">
+                      <img src="static/images/MSLT.jpg" width="150" height="150" class="d-inline-block align-top " alt="">
+                     <h2>Medical Sign Language Translator - version 1</h2>
+                      </a>
+                      <a  class="nav-item nav-link text" href="login"><button>Logout</button></a>
+                    </nav> 
+                  </div>      
+              </div>  
+            </div>  
+          </header>       
+<div class ="container" style="margin-bottom:30px;">
+    <img src="static/images/logo3.jpg" width="1080" height="250" class="d-inline-block align-top " alt="">
+</div>
+
+<div class ="container">
+    <div class ="row">
+        <div class=col-12>
+          <div class="jumbotron" style="background-color:rgb(166, 232, 244);">
+              <h1 class="display-5 align">Welcome To The Medical Sign Language Translator</h1>
+              <hr class="my-4">
+              <p class="align"> Medical Sign Language Translator is here to improve on the medical care given to the deaf by ensuring thorough communication.</p> 
+              <hr class="my-4">
+
+              <div class="container center">
+              <div class=col-10 >
+<p class="align">Click <a href="/patient"><button>here</button></a> to add a patient.</p>
+<br><br>
+<h3> Posts:</h3>
+{% for post in posts %}
+   <strong> Title:</strong> {{ post.title}} <br>
+   <strong> Post:</strong> {{ post.description}} <br>
+   <br>
+{% endfor %}
+               </div>
+            </div>
+         </div>
+       </div>
+  </div>
+</div>
+{% endblock %}

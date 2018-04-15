@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block title %}Login{% endblock %}
+{% block content %}
+<header>
+    <div class ="container" style="margin-bottom:30px;">
+      <div class ="row">
+          <div class=col-12>
+            <nav class="navbar navbar-inverse navbar-light text" style="background-color : #944660;" >
+              <a class="navbar-brand " href="#">
+              <img src="static/images/MSLT.jpg" width="150" height="150" class="d-inline-block align-top " alt="">
+             <h2>Medical Sign Language Translator - version 1</h2>
+              </a>
+              <a  class="nav-item nav-link text" href="login"><button>SignIn</button></a>
+            </nav> 
+          </div>      
+      </div>  
+    </div>  
+  </header> 
+  <div class ="container">
+    <div class ="row">
+        <div class=col-12>
+          <div class="jumbotron" style="background-color:rgb(166, 232, 244);">
+              <h1 class="display-5 align">Welcome To The Medical Sign Language Translator</h1>
+              <hr class="my-4">
+              <p class="align"> Catch up with the trending Medical Sign Language Translato!</p>
+              <hr class="my-4">
+
+              <div class="container center">
+              <div class=col-10 >
+               <h1>Please Login</h1>
+            <br>
+            <form action="" method="post">
+                <input type="text" placeholder="Username" name="username" value="{{request.form.username}}">
+                <input type="password" placeholder="Password" name="password" value="{{request.form.password}}">
+                <input class="btn btn-default" type="submit" value="Login">
+            </form>
+        </div>
+    </div>
+    <br>
+    <p class="align">Click <a href="/register"><button>here</button></a> to create an account.</p>
+  </div>
+
+</div>
+</div>
+</div>
+
+{% endblock %}

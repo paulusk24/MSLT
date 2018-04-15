@@ -1,0 +1,111 @@
+{% extends "layout.html" %}
+
+{% block title %}Business_Registration{% endblock %}
+{% block content %}
+
+<body style="background-color:white;">
+    <header>
+            <div class ="container" style="margin-bottom:30px;">
+              <div class ="row">
+                  <div class=col-12>
+                    <nav class="navbar navbar-inverse navbar-light text" style="background-color : #944654;" >
+                      <a class="navbar-brand " href="#">
+                      <img src="images/logo.png" width="30" height="30" class="d-inline-block align-top " alt="">
+                      <h2>We Connect - Business Network</h2>
+                      </a>
+                      <a  class="nav-item nav-link text" href="home"><button>Businesses</button></a>
+                      <a  class="nav-item nav-link text" href="login"><button>Log out</button></a>
+                    </nav> 
+                  </div>      
+              </div>  
+            </div>  
+          </header>       
+            <div class ="container">
+                <div class ="row">
+                    <div class=col-12>
+                      <div class="jumbotron" style="background-color:#A6F4DC;">
+                            <div class="container items" >
+                                    <div class="form-group float-right">
+                                        <!-- Trigger the modal with add item button -->
+                                        <button class=" btn btn-info" type="submit" data-toggle="modal" data-target="#myModal">Create New Business</button>
+                                    </div><!-- container-->
+                                
+                                
+                                    <!-- Modal -->
+                                
+                                    <div id="myModal" class="modal fade" role="dialog">
+                                        <div class="modal-dialog">
+                                            <!-- Modal content-->
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title">New Business</h4>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                
+                                                <!--modal body-->
+                                                <div class="modal-body">
+                                                    <form class="form-horizontal">
+                                                        <div class="row">
+                                                            <div class="col">
+                                
+                                                                <!--title-->
+                                                                <div class="form-group">
+                                                                    <label class="control-label col-sm-2" for="item">Title:</label>
+                                                                    <div class="col">
+                                                                        <input type="text" class="form-control" id="item" >
+                                                                    </div>
+                                                                </div>
+                                
+                                                                <!--description-->
+                                                                <div class="form-group">
+                                                                    <label class="control-label col-sm-2" for="description">Description:</label>
+                                                                    <div class="col">
+                                                                        <textarea type="text" class="form-control" id="description"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-success" data-dismiss="modal">Save</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                
+                                 <!-- Table of lists that have been created-->
+                                
+                                    <table class="table table-hover table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th>Business Name</th>
+                                            <th>Description</th>
+                                            <th colspan="2">Action</th>
+                                        </tr>
+                                        </thead>
+                                
+                                        <tbody>
+                                        <tr>
+                                            <td><a href="'#'">GO REAL ESTATE BROKER (GREB) </a></td>
+                                            <td><p>GREB is an application that is here to get you your dream home.  </p>
+                                                <p>Pick your dream home and neighbourhood with just a simple click! For inquiries please reach us on our helpline.</p></td>
+                                            <td><a href="#">Edit</a></td>
+                                            <td><a href="#">Delete</a></td>
+                                        </tr>
+                                                </tbody>
+                                    </table>
+                                </div>
+                          
+
+            
+                        </div>
+     
+                </div>
+              </div>
+            </div>
+            {% endblock %}
