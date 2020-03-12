@@ -41,7 +41,7 @@ Flask-SocketIO==2.9.6
 idna==2.6
 jwt==0.5.2
 pew==1.1.2
-psutil==5.3.1
+psutil==5.6.6
 pyasn1==0.4.2
 pycparser==2.18
 python-engineio==2.0.3
